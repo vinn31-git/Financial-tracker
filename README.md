@@ -9,7 +9,7 @@ https://my-finance-hub-five.vercel.app/
 
 ## Assignment Summary
 
-FinanceHub is a modern frontend dashboard for tracking personal finances. The goal of this project was to build a clean, user-friendly interface that presents financial data clearly while supporting common dashboard interactions such as filtering, role-based actions, navigation, responsiveness, and theme switching.
+FinanceHub is a modern frontend dashboard for tracking personal finances. The goal of my project was to build a clean, user-friendly interface that presents financial data clearly while supporting common dashboard interactions such as filtering, role-based actions, navigation, responsiveness, and theme switching.
 
 This project was built to showcase:
 
@@ -24,6 +24,7 @@ This project was built to showcase:
 
 - Dashboard summary cards for total balance, income, and expenses
 - Interactive financial charts
+- MockAPI Integration
 - Transactions table with search, filtering, and sorting
 - Admin mode for adding and deleting transactions
 - Insights section for quick financial summaries
@@ -38,8 +39,9 @@ This project was built to showcase:
 - Vite
 - JavaScript (JSX)
 - CSS
+- HTML
 
-## Why This Project Stands Out
+## What makes my project objective-oriented and stand-out
 
 - Focuses on both functionality and presentation
 - Includes responsive design for desktop and mobile screens
