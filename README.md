@@ -6,8 +6,6 @@ A responsive personal finance dashboard developed as an internship assignment to
 ## Live Demo
 
 https://my-finance-hub-five.vercel.app/
-<img width="1912" height="863" alt="image" src="https://github.com/user-attachments/assets/e71883d5-b707-4e36-bb85-c624b734196b" />
-
 
 ## Assignment Summary
 
@@ -113,6 +111,8 @@ Through this assignment, I practiced:
 - handling local mock data flows
 - improving UI responsiveness and navigation behavior
 - preparing a project for deployment
+<img width="1912" height="863" alt="image" src="https://github.com/user-attachments/assets/7917fcae-1fcd-4a99-8d81-06e675397dd7" />
+  
 
 ## Current Limitations
 
@@ -128,6 +128,7 @@ Through this assignment, I practiced:
 - improve chart interactions further
 - add authentication and protected admin access
 - enhance notifications and form validation
+
 
 ## Internship Note
 
