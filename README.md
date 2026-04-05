@@ -1,26 +1,57 @@
-# Financial Tracker
+```md
+# FinanceHub
 
-A responsive personal finance dashboard built with React and Vite.
+A responsive personal finance dashboard developed as an internship assignment to demonstrate frontend development skills, UI thinking, and clean project delivery.
 
 ## Live Demo
 
-http://my-finance-hub-five.vercel.app/
+https://my-finance-hub-five.vercel.app/
+<img width="1912" height="863" alt="image" src="https://github.com/user-attachments/assets/e71883d5-b707-4e36-bb85-c624b734196b" />
 
 
-## Project Overview
+## Assignment Summary
 
-This project is a frontend finance dashboard that helps users:
+FinanceHub is a modern frontend dashboard for tracking personal finances. The goal of this project was to build a clean, user-friendly interface that presents financial data clearly while supporting common dashboard interactions such as filtering, role-based actions, navigation, responsiveness, and theme switching.
 
-- view income, expenses, and total balance
-- explore charts and transaction insights
-- switch between Viewer and Admin modes
-- add and delete transactions in Admin mode
-- navigate between Dashboard, About, Services, and Contact pages
-- use light and dark mode
+This project was built to showcase:
 
-## Repository Structure
+- React component-based architecture
+- clean and responsive UI implementation
+- state management with React hooks
+- reusable components
+- user-focused dashboard design
+- deployment workflow using GitHub and Vercel
 
-The actual app lives inside the [`my-finance-app`](./my-finance-app) folder.
+## Key Features
+
+- Dashboard summary cards for total balance, income, and expenses
+- Interactive financial charts
+- Transactions table with search, filtering, and sorting
+- Admin mode for adding and deleting transactions
+- Insights section for quick financial summaries
+- Multi-page navigation: Dashboard, About, Services, Contact
+- Dark mode / light mode toggle
+- Mobile-friendly navigation with hamburger menu
+- Deployed production version
+
+## Tech Stack
+
+- React
+- Vite
+- JavaScript (JSX)
+- CSS
+
+## Why This Project Stands Out
+
+- Focuses on both functionality and presentation
+- Includes responsive design for desktop and mobile screens
+- Separates UI into reusable components
+- Demonstrates practical frontend skills instead of only static pages
+- Shows end-to-end workflow: development, GitHub version control, and deployment
+
+## Project Structure
+
+The actual application is inside the `my-finance-app` folder.
 
 ```text
 financial-dashboard/
@@ -30,14 +61,7 @@ financial-dashboard/
     package.json
 ```
 
-## Tech Stack
-
-- React
-- Vite
-- JavaScript (JSX)
-- CSS
-
-## Run Locally
+## Local Setup
 
 ```bash
 cd my-finance-app
@@ -45,7 +69,7 @@ npm install
 npm run dev
 ```
 
-## Build for Production
+## Production Build
 
 ```bash
 cd my-finance-app
@@ -54,38 +78,59 @@ npm run build
 
 ## Deployment
 
-This app is deployed from the `my-finance-app` subfolder.
+This project is deployed from the `my-finance-app` subfolder.
 
-Recommended settings for Vercel:
+Vercel settings:
 
 - Root Directory: `my-finance-app`
 - Build Command: `npm run build`
 - Output Directory: `dist`
 
-## Features
+## Main Functional Areas
 
-- Dashboard summary cards
-- Interactive charts
-- Transaction table with search and filters
-- Admin transaction modal
-- Insights section
-- Static About, Services, and Contact pages
-- Mobile navigation menu
-- Dark mode toggle
+### 1. Dashboard
 
-## Notes
+Displays key financial metrics and charts to help users quickly understand their current financial overview.
 
-- Data is currently mocked on the frontend.
-- There is no backend or database yet.
-- Some repository files at the root are extra workspace files and can be cleaned later.
+### 2. Transactions Management
+
+Users can browse transactions, search records, apply filters, and sort entries. In Admin mode, transactions can also be added or removed.
+
+### 3. Informational Pages
+
+The About, Services, and Contact sections extend the project beyond a single dashboard screen and show multi-page UI handling inside a React app.
+
+### 4. UI/UX Enhancements
+
+The project includes dark mode support, mobile navigation, clean card layouts, and structured visual hierarchy for improved usability.
+
+## What I Learned
+
+Through this assignment, I practiced:
+
+- structuring a React project into multiple components
+- debugging import/export and rendering issues
+- handling local mock data flows
+- improving UI responsiveness and navigation behavior
+- preparing a project for deployment
+
+## Current Limitations
+
+- Uses mock data instead of a real backend
+- Transactions are not persisted in a database
+- Authentication is not implemented yet
 
 ## Future Improvements
 
-- connect to a real backend
-- persist transactions in a database
-- improve icons and polish
-- add authentication
-- add form validation and notifications
-- clean the repo root structure
-<img width="1900" height="872" alt="image" src="https://github.com/user-attachments/assets/df31acd5-7fb1-4e1f-838e-525a4a903c74" />
+- connect the dashboard to a backend API
+- store transactions in a database
+- add edit transaction functionality
+- improve chart interactions further
+- add authentication and protected admin access
+- enhance notifications and form validation
+
+## Internship Note
+
+This project was created as part of an internship assignment to demonstrate practical frontend engineering ability, problem-solving, and product-focused UI implementation.
+```
 
