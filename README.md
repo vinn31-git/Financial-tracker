@@ -4,7 +4,8 @@ A responsive personal finance dashboard built with React and Vite.
 
 ## Live Demo
 
-Add your deployed Vercel URL here.
+http://my-finance-hub-five.vercel.app/
+
 
 ## Project Overview
 
@@ -86,4 +87,5 @@ Recommended settings for Vercel:
 - add authentication
 - add form validation and notifications
 - clean the repo root structure
+<img width="1900" height="872" alt="image" src="https://github.com/user-attachments/assets/df31acd5-7fb1-4e1f-838e-525a4a903c74" />
 
