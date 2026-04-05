@@ -1,77 +1,70 @@
-// ── About Page ─────────────────────────────────────────────────
 import { useState } from "react";
+
 function AboutPage() {
   return (
     <main className="main">
       <h1 className="page-title">About Us</h1>
       <div className="info-card">
-        <div className="info-card-icon">💜</div>
+        <div className="info-card-icon">{"\uD83D\uDC8E"}</div>
         <h2 className="info-card-heading">What is FinanceHub?</h2>
         <p className="info-card-text">
           SmartSpend is a simple personal finance dashboard built to help you
           keep track of your income, expenses and savings all in one place.
-          No complicated setup, no bank connections — just you and your numbers.
+          No complicated setup, no bank connections - just you and your numbers.
         </p>
       </div>
 
       <div className="info-grid">
         <div className="info-box">
-          <span className="info-box-icon">🎯</span>
+          <span className="info-box-icon">{"\uD83C\uDFAF"}</span>
           <h3>Our Goal</h3>
           <p>Make budgeting easy and stress-free for everyone, not just finance experts.</p>
         </div>
         <div className="info-box">
-          <span className="info-box-icon">🔒</span>
+          <span className="info-box-icon">{"\uD83D\uDD12"}</span>
           <h3>Privacy First</h3>
-          <p>All your data stays on your device. We don't store or share anything with third parties.</p>
+          <p>All your data stays on your device. We do not store or share anything with third parties.</p>
         </div>
         <div className="info-box">
-          <span className="info-box-icon">🚀</span>
+          <span className="info-box-icon">{"\uD83D\uDE80"}</span>
           <h3>Always Improving</h3>
-          <p>We're constantly adding new features based on user feedback. More coming soon!</p>
+          <p>We are constantly adding new features based on user feedback. More coming soon!</p>
         </div>
       </div>
     </main>
   );
 }
 
-// ── Services Page ───────────────────────────────────────────────
 function ServicesPage() {
   var services = [
     {
-      icon: "📊",
+      icon: "\uD83D\uDCCA",
       name: "Expense Tracking",
       desc: "Log and categorize every transaction. See exactly where your money is going each month.",
       tag: "Free",
     },
     {
-      icon: "📈",
+      icon: "\uD83D\uDCC8",
       name: "Spending Analytics",
       desc: "Visual charts that break down your spending by category so you can spot patterns easily.",
       tag: "Free",
     },
     {
-      icon: "🎯",
+      icon: "\uD83C\uDFAF",
       name: "Budget Planning",
-      desc: "Set monthly budgets for each category and get notified when you're close to the limit.",
+      desc: "Set monthly budgets for each category and get notified when you are close to the limit.",
       tag: "Coming Soon",
     },
     {
-      icon: "📤",
+      icon: "\uD83D\uDCE4",
       name: "Export Reports",
       desc: "Download your transaction history as CSV or PDF to share with your accountant.",
       tag: "Coming Soon",
     },
     {
-      icon: "🔑",
+      icon: "\uD83D\uDD11",
       name: "Admin Controls",
       desc: "Switch to admin mode to add, edit or delete transactions directly from the dashboard.",
-      tag: "Free",
-    },
-    {
-      icon: "🌙",
-      name: "Dark Mode",
-      desc: "Easy on the eyes — toggle between light and dark theme anytime from the navbar.",
       tag: "Free",
     },
   ];
@@ -82,7 +75,7 @@ function ServicesPage() {
       <p className="page-subtitle">Everything you need to manage your finances in one place.</p>
 
       <div className="services-grid">
-        {services.map(function(s, i) {
+        {services.map(function (s, i) {
           return (
             <div key={i} className="service-card">
               <div className="service-top">
@@ -101,7 +94,6 @@ function ServicesPage() {
   );
 }
 
-// ── Contact Page ────────────────────────────────────────────────
 function ContactPage() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -113,8 +105,7 @@ function ContactPage() {
       alert("Please fill in all the fields!");
       return;
     }
-    // in a real app this would call an API
-    // for now just show a success message
+
     setSent(true);
   }
 
@@ -123,38 +114,35 @@ function ContactPage() {
       <h1 className="page-title">Contact Us</h1>
 
       <div className="contact-wrap">
-
-        {/* left side - contact info */}
         <div className="contact-info">
           <h2 className="info-card-heading">Get in Touch</h2>
           <p className="info-card-text">
-            Have a question or found a bug? We'd love to hear from you.
-            Fill in the form and we'll get back to you as soon as possible.
+            Have a question or found a bug? We would love to hear from you.
+            Fill in the form and we will get back to you as soon as possible.
           </p>
 
           <div className="contact-details">
             <div className="contact-detail-row">
-              <span>📧</span>
+              <span>{"\uD83D\uDCE7"}</span>
               <span>hello@SmartSpend.app</span>
             </div>
             <div className="contact-detail-row">
-              <span>📍</span>
-              <span> India</span>
+              <span>{"\uD83D\uDCCD"}</span>
+              <span>India</span>
             </div>
             <div className="contact-detail-row">
-              <span>🕐</span>
-              <span>Mon – Fri, 9am to 6pm IST</span>
+              <span>{"\uD83D\uDD50"}</span>
+              <span>Mon - Fri, 9am to 6pm IST</span>
             </div>
           </div>
         </div>
 
-        {/* right side - contact form */}
         <div className="contact-form-box">
           {sent ? (
             <div className="form-success">
-              <span style={{ fontSize: "40px" }}>✅</span>
+              <span style={{ fontSize: "40px" }}>{"\u2705"}</span>
               <h3>Message Sent!</h3>
-              <p>Thanks for reaching out. We'll reply within 24 hours.</p>
+              <p>Thanks for reaching out. We will reply within 24 hours.</p>
               <button className="btn-save" onClick={() => setSent(false)}>
                 Send Another
               </button>
@@ -195,10 +183,10 @@ function ContactPage() {
             </>
           )}
         </div>
-
       </div>
     </main>
   );
 }
+
 export { AboutPage, ServicesPage, ContactPage };
 export default { AboutPage, ServicesPage, ContactPage };

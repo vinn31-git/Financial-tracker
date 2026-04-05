@@ -623,6 +623,8 @@
   .nav-link       { width: 100%; text-align: left; padding: 10px 12px; }
   .hamburger-btn  { display: grid; }
   .navbar         { position: relative; }
+  .nav-right      { gap: 10px; }
+  .role-select    { max-width: 110px; }
 }
 
 @media (max-width: 640px) {
@@ -635,4 +637,8 @@
   .table-controls  { flex-direction: column; }
   .filter-select   { width: 100%; }
   .role-banner     { padding: 8px 16px; }
+  .nav-brand       { font-size: 15px; }
+  .nav-right       { gap: 8px; }
+  .role-select     { padding: 6px 10px; font-size: 12px; max-width: 96px; }
+  .avatar          { width: 30px; height: 30px; font-size: 11px; }
 }

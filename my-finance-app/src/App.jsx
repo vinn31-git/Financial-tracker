@@ -9,6 +9,7 @@ export default function FinanceHub() {
   const [dark, setDark] = useState(false);
   const [role, setRole] = useState("Viewer");
   const [page, setPage] = useState("dashboard");
+  const [menuOpen, setMenuOpen] = useState(false);
   const [transactions, setTransactions] = useState([]);
   const [loading, setLoading] = useState(true);
   const [apiStatus, setApiStatus] = useState("loading");
@@ -59,6 +60,11 @@ export default function FinanceHub() {
     deleteTransaction(id).then(() => {
       setTransactions((prev) => prev.filter((t) => t.id !== id));
     });
+  }
+
+  function handlePageChange(nextPage) {
+    setPage(nextPage);
+    setMenuOpen(false);
   }
 
   function renderPage() {
@@ -128,22 +134,32 @@ export default function FinanceHub() {
           FinanceHub
         </div>
 
-        <div className="nav-links">
-          <button className={page === "dashboard" ? "nav-link active" : "nav-link"} onClick={() => setPage("dashboard")}>
+        <div className={menuOpen ? "nav-links open" : "nav-links"}>
+          <button className={page === "dashboard" ? "nav-link active" : "nav-link"} onClick={() => handlePageChange("dashboard")}>
             Dashboard
           </button>
-          <button className={page === "about" ? "nav-link active" : "nav-link"} onClick={() => setPage("about")}>
+          <button className={page === "about" ? "nav-link active" : "nav-link"} onClick={() => handlePageChange("about")}>
             About
           </button>
-          <button className={page === "services" ? "nav-link active" : "nav-link"} onClick={() => setPage("services")}>
+          <button className={page === "services" ? "nav-link active" : "nav-link"} onClick={() => handlePageChange("services")}>
             Services
           </button>
-          <button className={page === "contact" ? "nav-link active" : "nav-link"} onClick={() => setPage("contact")}>
+          <button className={page === "contact" ? "nav-link active" : "nav-link"} onClick={() => handlePageChange("contact")}>
             Contact
           </button>
         </div>
 
         <div className="nav-right">
+          <button
+            className="hamburger-btn"
+            type="button"
+            aria-label="Toggle navigation menu"
+            aria-expanded={menuOpen}
+            onClick={() => setMenuOpen((prev) => !prev)}
+          >
+            {menuOpen ? "✕" : "☰"}
+          </button>
+
           <span className={"api-dot " + apiStatus} title={"API: " + apiStatus} />
 
           <select
